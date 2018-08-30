@@ -16,5 +16,16 @@ namespace FrankenApp.Controllers
 
             return View(user);
         }
+
+        public ActionResult ListOfUsers()
+        {
+            List<User> users = new List<User>();
+
+            users.Add(new User { Id = 11, Name = "Jedan", Number = 111 });
+            users.Add(new User { Id = 22, Name = "Dva", Number = 222 });
+            users.Add(new User { Id = 33, Name = "Tri", Number = 333 });
+
+            return View(users);
+        }
     }
 }
