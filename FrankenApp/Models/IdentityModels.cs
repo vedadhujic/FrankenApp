@@ -21,7 +21,7 @@ namespace FrankenApp.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("FrankenAppConnection", throwIfV1Schema: false)
         {
         }
 

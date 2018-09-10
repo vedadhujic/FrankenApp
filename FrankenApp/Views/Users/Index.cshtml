@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<FrankenApp.Models.User>
 
 @{
-    ViewBag.Title = "ListOfUsers";
+    ViewBag.Title = "Index";
 }
 
-<h2>ListOfUsers</h2>
+<h2>Index</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -17,6 +17,9 @@
         <th>
             @Html.DisplayNameFor(model => model.Number)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Occupation)
+        </th>
         <th></th>
     </tr>
 
@@ -27,6 +30,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Occupation)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
