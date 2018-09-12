@@ -13,7 +13,7 @@ namespace FrankenApp.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201809092135329_Initial"; }
+            get { return "201809122318043_Initial"; }
         }
         
         string IMigrationMetadata.Source

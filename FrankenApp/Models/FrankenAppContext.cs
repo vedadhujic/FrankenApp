@@ -10,10 +10,13 @@ namespace FrankenApp.Models
     {
         public FrankenAppContext() : base("name=FrankenAppConnection")
         {
-
         }
 
         public DbSet<User> Users { get; set; }
 
+        public DbSet<Proba> Probe { get; set; }
+        public DbSet<Proba2> Probe2 { get; set; }
+        public DbSet<Proba3> Probe3 { get; set; }
+        public DbSet<Proba4> Probe4 { get; set; }
     }
 }

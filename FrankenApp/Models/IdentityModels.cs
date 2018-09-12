@@ -21,10 +21,10 @@ namespace FrankenApp.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("FrankenAppConnection", throwIfV1Schema: false)
+            : base("name=FrankenAppConnection", throwIfV1Schema: false)
         {
         }
-
+                
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

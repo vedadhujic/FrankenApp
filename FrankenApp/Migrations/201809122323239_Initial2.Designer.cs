@@ -7,13 +7,13 @@ namespace FrankenApp.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class AddedEFViews : IMigrationMetadata
+    public sealed partial class Initial2 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddedEFViews));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial2));
         
         string IMigrationMetadata.Id
         {
-            get { return "201809092301454_AddedEFViews"; }
+            get { return "201809122323239_Initial2"; }
         }
         
         string IMigrationMetadata.Source
