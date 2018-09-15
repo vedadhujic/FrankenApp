@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Web;
 
@@ -18,5 +19,11 @@ namespace FrankenApp.Models
         public DbSet<Proba2> Probe2 { get; set; }
         public DbSet<Proba3> Probe3 { get; set; }
         public DbSet<Proba4> Probe4 { get; set; }
+        public DbSet<Jednina> Jednine { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+        }
     }
 }

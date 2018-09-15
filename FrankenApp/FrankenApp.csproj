@@ -204,10 +204,15 @@
     <Compile Include="Migrations\201809122323239_Initial2.Designer.cs">
       <DependentUpon>201809122323239_Initial2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809142126230_Pluralizacija.cs" />
+    <Compile Include="Migrations\201809142126230_Pluralizacija.Designer.cs">
+      <DependentUpon>201809142126230_Pluralizacija.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FrankenAppContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Jednina.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Proba.cs" />
     <Compile Include="Models\Proba2.cs" />
@@ -292,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809122323239_Initial2.resx">
       <DependentUpon>201809122323239_Initial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809142126230_Pluralizacija.resx">
+      <DependentUpon>201809142126230_Pluralizacija.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
